@@ -4,6 +4,7 @@ import Slider from 'react-slick'
 import Cuadrant from '../../components/Cuandrant'
 import Information from '../../components/Information'
 import Photos from '../../components/Photos'
+import Stats from '../../components/Stats'
 import cuarto from '../../images/cuarto.jpg';
 import patio from '../../images/patio.jpg';
 import sala from '../../images/sala.jpg';
@@ -28,6 +29,7 @@ class App extends React.Component {
         </Slider>
         <Information />
         <Photos />
+        <Stats house={1} guests={10} rooms={4} beds={6} />
       </div>
     );
   }
