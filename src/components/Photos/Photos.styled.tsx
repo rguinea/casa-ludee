@@ -27,4 +27,9 @@ export const Slider = styled(Slick)`
       filter: grayscale(100%);
     }
   }
+  .slick-dots li.slick-active {
+    >img {
+      filter: grayscale(0%);
+    }
+  }
 `;
