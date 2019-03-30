@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import ImageWithText from '../ImageWithText';
 
-import { FlexContainer } from './Amenities.styled';
+import { FlexContainer, Logo, Title } from './Amenities.styled';
 
 import cerradura from '../../images/cerradura.svg';
 import coche from '../../images/coche.svg';
@@ -10,6 +10,7 @@ import cocina from '../../images/cocina.svg';
 import gas from '../../images/gas.svg';
 import juegos from '../../images/juegos.svg';
 import lavadora from '../../images/lavadora.svg';
+import logo from '../../images/logo.png';
 import patio from '../../images/patio.svg';
 import toallas from '../../images/toallas.svg';
 import tv from '../../images/tv.svg';
@@ -17,6 +18,8 @@ import wifi from '../../images/wifi.svg';
 
 const Amenities: React.FC<{}> = (): JSX.Element => {
   return <>
+    <Logo src={logo}/>
+    <Title>- Servicios completos durante tu estadía -</Title>
     <FlexContainer>
       <ImageWithText imageSrc={wifi} text='Wifi en toda la estancia' />
       <ImageWithText imageSrc={tv} text='Televisión por cable' />
