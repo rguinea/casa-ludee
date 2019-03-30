@@ -4,3 +4,8 @@ export interface IPropTypes {
   house: number;
   rooms: number;
 }
+
+export interface IPropTypesSingleStat {
+  value: number;
+  name: string;
+}

@@ -4,9 +4,9 @@ import styled from 'styled-components';
 export const Slider = styled(Slick)`
    
   .slick-track {
-    padding: 30px;
+    padding: 0px 60px;
   }
-   
+  
   .slick-slide img {
     transition: all 0.4s ease-out;
   }
