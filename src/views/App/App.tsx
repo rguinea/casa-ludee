@@ -5,6 +5,7 @@ import Amenities from '../../components/Amenities'
 import Cuadrant from '../../components/Cuandrant'
 import Information from '../../components/Information'
 import Photos from '../../components/Photos'
+import SanMiguelArea from '../../components/SanMiguelArea'
 import ShareMoments from '../../components/ShareMoments'
 import Stats from '../../components/Stats'
 import cuarto from '../../images/cuarto.jpg';
@@ -36,6 +37,7 @@ class App extends React.Component {
         <Cuadrant backgroundImage={patio} isDouble={true} >
           <ShareMoments />
         </Cuadrant>
+        <SanMiguelArea />
       </div>
     );
   }

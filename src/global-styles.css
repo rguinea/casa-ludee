@@ -342,31 +342,31 @@ body {
     font-family: 'Colaborate-Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Colaborate-Bold'), url('./fonts/ColabBol.otf') format('otf');
+    src: local('Colaborate-Bold'), url('./fonts/ColabBol.otf') format('opentype');
 }
 @font-face {
     font-family: 'Colaborate-Light';
     font-style: normal;
     font-weight: normal;
-    src: local('Colaborate-Light'), url('./fonts/ColabLig.otf') format('otf');
+    src: local('Colaborate-Light'), url('./fonts/ColabLig.otf') format('opentype');
 }
 @font-face {
     font-family: 'Colaborate-Medium';
     font-style: normal;
     font-weight: normal;
-    src: local('Colaborate-Medium'), url('./fonts/ColabMed.otf') format('otf');
+    src: local('Colaborate-Medium'), url('./fonts/ColabMed.otf') format('opentype');
 }
 @font-face {
     font-family: 'Colaborate-Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Colaborate-Regular'), url('./fonts/ColabReg.otf') format('otf');
+    src: local('Colaborate-Regular'), url('./fonts/ColabReg.otf') format('opentype');
 }
 @font-face {
     font-family: 'Colaborate-Thin';
     font-style: normal;
     font-weight: normal;
-    src: local('Colaborate-Thin'), url('./fonts/ColabThi.otf') format('otf');
+    src: local('Colaborate-Thin'), url('./fonts/ColabThi.otf') format('opentype');
 }
 @font-face {
     font-family: 'Gotham';
@@ -374,4 +374,15 @@ body {
     font-weight: normal;
     src: local('Gotham'), url('./fonts/GothamMedium_1.woff') format('woff');
 }
-
+@font-face {
+    font-family: 'Ailerons';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ailerons'), url('./fonts/Ailerons.otf') format('opentype');
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SourceSansPro'), url('./fonts/SourceSansPro.ttf') format('opentype');
+}
