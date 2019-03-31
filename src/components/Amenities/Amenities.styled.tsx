@@ -29,3 +29,16 @@ export const Logo = styled.img`
   height: 66px;
   width: 66px;
 `;
+
+export const MoreInfo = styled.p`
+	border: solid 2px #171717;
+	font-family: Colaborate;
+	font-size: 19.1px;
+	font-weight: 300;
+	letter-spacing: 1.9px;
+	text-align: center;
+	color: #67676a;
+	padding: 24px 18px;
+	width: 80vw;
+  margin: auto;
+`;

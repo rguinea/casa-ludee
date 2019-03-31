@@ -5,6 +5,7 @@ import Amenities from '../../components/Amenities'
 import Cuadrant from '../../components/Cuandrant'
 import Information from '../../components/Information'
 import Photos from '../../components/Photos'
+import ShareMoments from '../../components/ShareMoments'
 import Stats from '../../components/Stats'
 import cuarto from '../../images/cuarto.jpg';
 import patio from '../../images/patio.jpg';
@@ -32,6 +33,9 @@ class App extends React.Component {
         <Photos />
         <Stats house={1} guests={10} rooms={4} beds={6} />
         <Amenities />
+        <Cuadrant backgroundImage={patio} isDouble={true} >
+          <ShareMoments />
+        </Cuadrant>
       </div>
     );
   }

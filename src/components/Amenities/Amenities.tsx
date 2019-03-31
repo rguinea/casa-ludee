@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import ImageWithText from '../ImageWithText';
 
-import { FlexContainer, Logo, Title } from './Amenities.styled';
+import { FlexContainer, Logo, MoreInfo, Title } from './Amenities.styled';
 
 import cerradura from '../../images/cerradura.svg';
 import coche from '../../images/coche.svg';
@@ -32,6 +32,10 @@ const Amenities: React.FC<{}> = (): JSX.Element => {
       <ImageWithText imageSrc={patio} text='Jardín y terraza familiar' />
       <ImageWithText imageSrc={coche} text='Estacionamiento para dos autos' />
     </FlexContainer>
+    <MoreInfo>
+      - LA CASA INCLUYE UNA AMA DE LLAVES DURANTE TODA TU ESTADÍA PARA
+      HACER MUCHO MÁS CONFORTABLE TUS DÍAS EN LA CASA -
+    </MoreInfo>
   </>
 };
 

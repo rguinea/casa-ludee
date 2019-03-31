@@ -338,4 +338,40 @@ body {
     opacity: .75;
     color: black;
 }
+ @font-face {
+    font-family: 'Colaborate-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Colaborate-Bold'), url('./fonts/ColabBol.otf') format('otf');
+}
+@font-face {
+    font-family: 'Colaborate-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Colaborate-Light'), url('./fonts/ColabLig.otf') format('otf');
+}
+@font-face {
+    font-family: 'Colaborate-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Colaborate-Medium'), url('./fonts/ColabMed.otf') format('otf');
+}
+@font-face {
+    font-family: 'Colaborate-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Colaborate-Regular'), url('./fonts/ColabReg.otf') format('otf');
+}
+@font-face {
+    font-family: 'Colaborate-Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Colaborate-Thin'), url('./fonts/ColabThi.otf') format('otf');
+}
+@font-face {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gotham'), url('./fonts/GothamMedium_1.woff') format('woff');
+}
 
