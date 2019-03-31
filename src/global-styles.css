@@ -6,6 +6,11 @@ body {
   font-family: sans-serif;
 }
 
+#root {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 /* Slider */
 .slick-slider
 {
@@ -385,4 +390,10 @@ body {
     font-style: normal;
     font-weight: normal;
     src: local('SourceSansPro'), url('./fonts/SourceSansPro.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'thornsDemo-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('thornsDemo-Regular;'), url('./fonts/thorns.ttf') format('opentype');
 }

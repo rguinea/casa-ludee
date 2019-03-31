@@ -14,7 +14,6 @@ const ShareMoments: React.FC = (): JSX.Element => {
   return (
     <FlexContainer>
       <TextContainer>
-
         { !isMobile &&
           <>
             <Title>Comparte</Title><Title>momentos</Title><Title>en familia</Title>

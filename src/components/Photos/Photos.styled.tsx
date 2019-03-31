@@ -16,8 +16,17 @@ export const Slider = styled(Slick)`
     transform: scale(1.25);
   }
   
+  .slick-list {
+    overflow: visible;
+    
+    @media all and (max-width: 768px) {
+      overflow: hidden;
+    }
+  }
+  
   .slick-dots {
     bottom: -80px;
+    margin-bottom: -45px;
   }
   
   .slick-dots li {

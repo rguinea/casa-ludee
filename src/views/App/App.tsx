@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Slider from 'react-slick'
 
+import Airbnb from '../../components/Airbnb'
 import Amenities from '../../components/Amenities'
 import Cuadrant from '../../components/Cuandrant'
 import Information from '../../components/Information'
@@ -38,6 +39,7 @@ class App extends React.Component {
           <ShareMoments />
         </Cuadrant>
         <SanMiguelArea />
+        <Airbnb />
       </div>
     );
   }

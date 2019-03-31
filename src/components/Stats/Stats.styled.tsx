@@ -9,6 +9,7 @@ export const FlexContainer = styled.div`
   margin: 100px 100px 0;
   align-items: center;
   flex-flow: row wrap;
+  margin-top: 170px;
   /* mobile phone */
   @media all and (max-width: 768px) {
     margin: 0 10px;
