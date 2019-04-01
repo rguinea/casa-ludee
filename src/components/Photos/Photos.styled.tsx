@@ -2,11 +2,6 @@ import Slick from 'react-slick';
 import styled from 'styled-components';
 
 export const Slider = styled(Slick)`
-   
-  .slick-track {
-    padding: 0px 60px;
-  }
-  
   .slick-slide img {
     transition: all 0.4s ease-out;
   }
@@ -26,7 +21,7 @@ export const Slider = styled(Slick)`
   
   .slick-dots {
     bottom: -80px;
-    margin-bottom: -45px;
+    margin-bottom: -40px;
   }
   
   .slick-dots li {
@@ -40,5 +35,20 @@ export const Slider = styled(Slick)`
     >img {
       filter: grayscale(0%);
     }
+  }
+`;
+
+export const Title = styled.h2`
+	font-family: Gotham;
+	font-weight: bold;
+	letter-spacing: 19.7px;
+	text-align: center;
+	color: #e1e1e1;
+	text-transform: uppercase;
+  font-size: 4vw;
+  margin: 36px;
+  margin-top: 20vh;
+  @media all and (max-width: 768px) {
+	  font-size: 25.8px;
   }
 `;

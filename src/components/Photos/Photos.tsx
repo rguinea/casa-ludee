@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { isMobile } from 'react-device-detect';
-import { Slider } from './Photos.styled'
+import { Slider, Title } from './Photos.styled'
 
 import cuarto from '../../images/cuarto.jpg';
 import patio from '../../images/patio.jpg';
@@ -27,7 +27,7 @@ const Photos: React.FC = (): JSX.Element => {
   };
   return (
     <>
-      <h1>Bienvenido a casa</h1>
+      <Title>Bienvenido a casa</Title>
       <Slider {...settings}>
         { images.map((image: string, key: number) => <img src={image} key={`${key}-${image}`} />) }
       </Slider>
