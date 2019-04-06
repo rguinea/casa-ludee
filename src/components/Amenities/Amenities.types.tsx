@@ -1,3 +1,3 @@
 export interface IPropTypes {
-  backgroundImage?: string;
+  id?: string;
 }

@@ -3,11 +3,12 @@ import * as React from 'react';
 import sanMike from '../../images/centro.jpg';
 
 import { BlueBackground, Image, Text, Title } from './SanMiguelArea.styled';
+import { IPropTypes } from './SanMiguelArea.types';
 
-const SanMiguelArea: React.FC = (): JSX.Element => {
+const SanMiguelArea: React.FC<IPropTypes> = (props): JSX.Element => {
   return (
     <>
-      <BlueBackground>
+      <BlueBackground id={props.id}>
         <Title>San Miguel de Allende</Title>
         <Text>
           San Miguel de Allende es considerada una de las ciudades más bonitas de México,

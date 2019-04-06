@@ -1,9 +1,10 @@
 import * as React from 'react';
-import Slider from 'react-slick'
+import Slider from 'react-slick';
 
 import Airbnb from '../../components/Airbnb'
 import Amenities from '../../components/Amenities'
 import Cuadrant from '../../components/Cuandrant'
+import Header from '../../components/Header'
 import Information from '../../components/Information'
 import Photos from '../../components/Photos'
 import SanMiguelArea from '../../components/SanMiguelArea'
@@ -25,21 +26,22 @@ class App extends React.Component {
       speed: 500,
     };
     return (
-      <div className="App">
+      <div className="App" id="home">
+        <Header />
         <Slider {...settings}>
           <Cuadrant backgroundImage={patio} />
           <Cuadrant backgroundImage={sala} />
           <Cuadrant backgroundImage={cuarto} />
         </Slider>
-        <Information />
+        <Information id="information" />
         <Photos />
         <Stats house={1} guests={10} rooms={4} beds={6} />
-        <Amenities />
+        <Amenities id="services" />
         <Cuadrant backgroundImage={patio} isDouble={true} >
           <ShareMoments />
         </Cuadrant>
-        <SanMiguelArea />
-        <Airbnb />
+        <SanMiguelArea id="location" />
+        <Airbnb id="airbnb" />
       </div>
     );
   }

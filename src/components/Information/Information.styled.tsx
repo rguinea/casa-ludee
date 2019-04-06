@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
 	justify-content: center;
+	position: relative;
   /* mobile phone */
   @media all and (max-width: 768px) {
     flex-flow: row-reverse wrap-reverse;

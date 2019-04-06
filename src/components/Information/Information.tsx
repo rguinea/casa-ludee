@@ -1,9 +1,14 @@
 import * as React from 'react';
+import { isMobile } from 'react-device-detect';
+
+import ScrollInfo from '../../components/ScrollInfo'
 import ludee from '../../images/ludee.png';
 import { Container, Image, ImageContainer, Text } from './Information.styled';
+import { IPropTypes } from './Information.types';
 
-const Information: React.FC = (): JSX.Element => {
-  return <Container>
+const Information: React.FC<IPropTypes> = (props): JSX.Element => {
+  return <Container id={props.id}>
+    { !isMobile && <ScrollInfo /> }
     <Text>
       Ven a hospedarte con tu familia en nuestra encantadora casa y enamórate de ella.
       <br/>

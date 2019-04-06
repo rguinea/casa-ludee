@@ -4,10 +4,11 @@ import { isMobile } from 'react-device-detect';
 import airbnb from '../../images/airbnb.png';
 
 import { AirbnbIFrame, Button, ButtonContainer, Container, Logo, MoreInfo, Text, Title } from './Airbnb.styled';
+import { IPropTypes } from './Airbnb.types';
 
 
-const Airbnb: React.FC<{}> = (): JSX.Element => {
-  return <Container>
+const Airbnb: React.FC<IPropTypes> = (props): JSX.Element => {
+  return <Container id={props.id}>
     <Logo src={airbnb}/>
     <Title>Disponibilidad</Title>
     <MoreInfo>
