@@ -1,15 +1,23 @@
 import * as React from 'react';
-import Slider from 'react-slick'
+import Slider from 'react-slick';
 
+import Airbnb from '../../components/Airbnb'
 import Amenities from '../../components/Amenities'
 import Cuadrant from '../../components/Cuandrant'
+import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 import Information from '../../components/Information'
 import Photos from '../../components/Photos'
+import Reviews from '../../components/Reviews'
+import SanMiguelArea from '../../components/SanMiguelArea'
+import ShareMoments from '../../components/ShareMoments'
 import Stats from '../../components/Stats'
 import cuarto from '../../images/cuarto.jpg';
+import prev from '../../images/left-arrow.svg';
 import patio from '../../images/patio.jpg';
+import next from '../../images/right-arrow.svg';
 import sala from '../../images/sala.jpg';
-import './App.css';
+import { AppContainer, Image } from './App.styled';
 
 
 class App extends React.Component {
@@ -17,22 +25,32 @@ class App extends React.Component {
     const settings = {
       autoplay: true,
       autoplaySpeed: 5000,
+      nextArrow: <Image src={next} />,
+      prevArrow: <Image src={prev} />,
       slidesToScroll: 1,
       slidesToShow: 1,
       speed: 500,
     };
     return (
-      <div className="App">
+      <AppContainer id="home">
+        <Header />
         <Slider {...settings}>
           <Cuadrant backgroundImage={patio} />
           <Cuadrant backgroundImage={sala} />
           <Cuadrant backgroundImage={cuarto} />
         </Slider>
-        <Information />
+        <Information id="information" />
         <Photos />
         <Stats house={1} guests={10} rooms={4} beds={6} />
-        <Amenities />
-      </div>
+        <Amenities id="services" />
+        <Cuadrant backgroundImage={patio} isDouble={true} >
+          <ShareMoments />
+        </Cuadrant>
+        <SanMiguelArea id="location" />
+        <Airbnb id="airbnb" />
+        <Reviews id="evals" />
+        <Footer />
+      </AppContainer>
     );
   }
 }

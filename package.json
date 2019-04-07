@@ -6,10 +6,12 @@
     "@types/react-slick": "^0.23.3",
     "@types/styled-components": "^4.1.12",
     "react": "^16.8.4",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-device-detect": "^1.6.2",
     "react-dom": "^16.8.4",
     "react-scripts-ts": "3.1.0",
     "react-slick": "^0.23.2",
+    "react-use-scroll-position": "^1.0.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.1.3"
   },

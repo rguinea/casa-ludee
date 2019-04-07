@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { BlueText, CursiveText, Divider, FlexContainer, FlexItem, NumberText, Text } from './Stats.styled';
+import CursiveText from '../DoubleText'
+import { Divider, FlexContainer, FlexItem, NumberText, Text } from './Stats.styled';
 import { IPropTypes, IPropTypesSingleStat } from './Stats.types';
 
 const SingleStat: React.FC<IPropTypesSingleStat> = (props) =>
@@ -27,8 +28,7 @@ const Stats: React.FC<IPropTypes> = (props): JSX.Element => {
         <Divider />
         <SingleStat value={beds} name='Camas' />
       </FlexContainer>
-      <CursiveText>Comodidad y confort</CursiveText>
-      <BlueText>Un hogar para todos</BlueText>
+      <CursiveText cursiveText="Comodidad y confort" text="Un hogar para todos" color="#11159a"/>
     </>
   )
 };

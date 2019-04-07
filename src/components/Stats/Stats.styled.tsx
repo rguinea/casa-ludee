@@ -9,6 +9,7 @@ export const FlexContainer = styled.div`
   margin: 100px 100px 0;
   align-items: center;
   flex-flow: row wrap;
+  margin-top: 170px;
   /* mobile phone */
   @media all and (max-width: 768px) {
     margin: 0 10px;
@@ -43,31 +44,5 @@ export const Divider = styled.span`
   /* mobile phone */
   @media all and (max-width: 768px) {
     display: none;
-  }
-`;
-
-export const BlueText = styled.p`
-	font-family: Oswald;
-	font-size: 40px;
-  margin-top: -50px;
-	text-align: center;
-	color: #11159a;
-  text-transform: uppercase;
-  /* mobile phone */
-  @media all and (max-width: 768px) {
-    font-size: 30px;
-    margin-top: -34px;
-  }
-`;
-
-export const CursiveText = styled.p`
-  margin: 0;
-	font-family: Allura;
-	font-size: 94.3px;
-	text-align: center;
-	color: #e0dfdf;
-  /* mobile phone */
-  @media all and (max-width: 768px) {
-    font-size: 50px;
   }
 `;

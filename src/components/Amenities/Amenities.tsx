@@ -2,7 +2,8 @@ import * as React from 'react';
 
 import ImageWithText from '../ImageWithText';
 
-import { FlexContainer, Logo, Title } from './Amenities.styled';
+import { FlexContainer, Logo, MoreInfo, Title } from './Amenities.styled';
+import { IPropTypes } from './Amenities.types';
 
 import cerradura from '../../images/cerradura.svg';
 import coche from '../../images/coche.svg';
@@ -16,9 +17,9 @@ import toallas from '../../images/toallas.svg';
 import tv from '../../images/tv.svg';
 import wifi from '../../images/wifi.svg';
 
-const Amenities: React.FC<{}> = (): JSX.Element => {
+const Amenities: React.FC<IPropTypes> = (props): JSX.Element => {
   return <>
-    <Logo src={logo}/>
+    <Logo src={logo} id={props.id}/>
     <Title>- Servicios completos durante tu estadía -</Title>
     <FlexContainer>
       <ImageWithText imageSrc={wifi} text='Wifi en toda la estancia' />
@@ -32,6 +33,10 @@ const Amenities: React.FC<{}> = (): JSX.Element => {
       <ImageWithText imageSrc={patio} text='Jardín y terraza familiar' />
       <ImageWithText imageSrc={coche} text='Estacionamiento para dos autos' />
     </FlexContainer>
+    <MoreInfo>
+      - LA CASA INCLUYE UNA AMA DE LLAVES DURANTE TODA TU ESTADÍA PARA
+      HACER MUCHO MÁS CONFORTABLE TUS DÍAS EN LA CASA -
+    </MoreInfo>
   </>
 };
 
