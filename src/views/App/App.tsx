@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import Airbnb from '../../components/Airbnb'
 import Amenities from '../../components/Amenities'
 import Cuadrant from '../../components/Cuandrant'
+import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Information from '../../components/Information'
 import Photos from '../../components/Photos'
@@ -48,6 +49,7 @@ class App extends React.Component {
         <SanMiguelArea id="location" />
         <Airbnb id="airbnb" />
         <Reviews id="evals" />
+        <Footer />
       </AppContainer>
     );
   }
