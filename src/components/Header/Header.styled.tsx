@@ -12,6 +12,7 @@ export const Option = styled(AnchorLink)`
   margin: 11px;
   position: relative;
   text-decoration: none;
+  transition: all 0.3s;
   &::after {
     content: "";
     width: 3px;
@@ -20,7 +21,6 @@ export const Option = styled(AnchorLink)`
     right: -11px;
     top: -11px;
     transition: all 0.3s;
-    
   }
   &:hover {
     &::after {
@@ -41,7 +41,7 @@ export const Container = styled.ul<{isInitial: boolean}>`
   padding: 25px 0;
   margin: 0;
   list-style: none;
-  transition-timing-function: linear;
+  transition: all 0.3s;
   ${Option} {
     color: ${({isInitial}) => isInitial ? "white" : "#1f1e1e"}
     &::after {
@@ -59,5 +59,6 @@ export const Logo = styled.img<{isInitial: boolean}>`
   filter: ${({isInitial}) => isInitial ? "brightness(0) invert(1);" : "none;"}
   height: 100%;
   margin-right:75px
+  transition: all 2s;
 `;
 

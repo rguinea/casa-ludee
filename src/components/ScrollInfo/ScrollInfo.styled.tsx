@@ -7,6 +7,7 @@ export const Text = styled.p`
 	letter-spacing: 3.8px;
 	text-align: center;
 	color: #11159a;
+	text-transform: uppercase;
 `;
 
 export const Image = styled.img`

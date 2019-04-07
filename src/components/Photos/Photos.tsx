@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { isMobile } from 'react-device-detect';
-import { Slider, Title } from './Photos.styled'
+import { ArrowButton, Image, Slider, Title } from './Photos.styled'
 
 import cuarto from '../../images/cuarto.jpg';
+import prev from '../../images/left-arrow.svg';
 import patio from '../../images/patio.jpg';
+import next from '../../images/right-arrow.svg';
 import sala from '../../images/sala.jpg';
 
 const Photos: React.FC = (): JSX.Element => {
@@ -21,6 +23,8 @@ const Photos: React.FC = (): JSX.Element => {
     ),
     dots: !isMobile,
     infinite: true,
+    nextArrow: <ArrowButton><Image src={next} /></ArrowButton>,
+    prevArrow: <ArrowButton><Image src={prev} /></ArrowButton>,
     slidesToScroll: 1,
     slidesToShow,
     speed: 500,

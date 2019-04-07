@@ -52,3 +52,19 @@ export const Title = styled.h2`
 	  font-size: 25.8px;
   }
 `;
+
+export const ArrowButton = styled.div`
+  width: 50px;
+  height: 50px;
+  margin: 0 50px;
+  border-radius: 50%;
+  background-color: rgba(140, 33, 18, 0.8)!important;
+  @media all and (max-width: 768px) {
+    margin: 0 75px;
+  }
+`;
+
+export const Image = styled.img`
+  width: 20px;
+  padding: 15px;
+`;

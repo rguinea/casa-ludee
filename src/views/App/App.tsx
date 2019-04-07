@@ -11,9 +11,11 @@ import SanMiguelArea from '../../components/SanMiguelArea'
 import ShareMoments from '../../components/ShareMoments'
 import Stats from '../../components/Stats'
 import cuarto from '../../images/cuarto.jpg';
+import prev from '../../images/left-arrow.svg';
 import patio from '../../images/patio.jpg';
+import next from '../../images/right-arrow.svg';
 import sala from '../../images/sala.jpg';
-import './App.css';
+import { AppContainer, Image } from './App.styled';
 
 
 class App extends React.Component {
@@ -21,12 +23,14 @@ class App extends React.Component {
     const settings = {
       autoplay: true,
       autoplaySpeed: 5000,
+      nextArrow: <Image src={next} />,
+      prevArrow: <Image src={prev} />,
       slidesToScroll: 1,
       slidesToShow: 1,
       speed: 500,
     };
     return (
-      <div className="App" id="home">
+      <AppContainer id="home">
         <Header />
         <Slider {...settings}>
           <Cuadrant backgroundImage={patio} />
@@ -42,7 +46,7 @@ class App extends React.Component {
         </Cuadrant>
         <SanMiguelArea id="location" />
         <Airbnb id="airbnb" />
-      </div>
+      </AppContainer>
     );
   }
 }

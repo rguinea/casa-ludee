@@ -54,6 +54,7 @@ export const Container = styled.div`
   @media all and (max-width: 768px) {
     width: 95vw;
     padding-bottom: 5vh;
+    border-width: 0px 0px 0px 0px;
   }
 `;
 

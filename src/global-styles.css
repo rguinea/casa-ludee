@@ -209,7 +209,6 @@ body {
 
 .slick-prev
 {
-  left: 25px !important;
   z-index: 1;
 }
 @media all and (max-width: 768px) {
@@ -219,21 +218,12 @@ body {
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
     left: auto;
-}
-.slick-prev:before
-{
-    content: '<';
-}
-[dir='rtl'] .slick-prev:before
-{
-    content: '>';
 }
 
 .slick-next
 {
-    right: -25px;
+    right: 0px;
 }
 @media all and (max-width: 768px) {
   .slick-next {
@@ -243,16 +233,8 @@ body {
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
 }
-.slick-next:before
-{
-    content: '>';
-}
-[dir='rtl'] .slick-next:before
-{
-    content: '<';
-}
+
 
 /* Dots */
 .slick-dotted.slick-slider
