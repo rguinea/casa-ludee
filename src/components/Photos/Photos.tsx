@@ -2,14 +2,15 @@ import * as React from 'react';
 import { isMobile } from 'react-device-detect';
 import { ArrowButton, Image, Slider, Title } from './Photos.styled'
 
-import cuarto from '../../images/cuarto.jpg';
 import prev from '../../images/left-arrow.svg';
-import patio from '../../images/patio.jpg';
 import next from '../../images/right-arrow.svg';
-import sala from '../../images/sala.jpg';
+
 
 const Photos: React.FC = (): JSX.Element => {
-  const images = [cuarto, patio, sala, cuarto, patio, sala];
+  const images: string[] = [];
+  for (let i = 1; i <= 27; i++) {
+    images.push(require(`../../images/unnamed-${i}.jpg`))
+  }
   const slidesToShow = isMobile ? 1 : 3;
   const centerPadding = isMobile ? '0px' : '60px';
   const settings = {
@@ -17,7 +18,7 @@ const Photos: React.FC = (): JSX.Element => {
     autoplaySpeed: 5000,
     centerMode: true,
     centerPadding,
-    className: 'center',
+    className: 'center variable-width',
     customPaging: (index: number) => (
       <img src={images[index]} width='100px' />
     ),

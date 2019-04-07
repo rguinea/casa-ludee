@@ -4,6 +4,17 @@ import styled from 'styled-components';
 export const Slider = styled(Slick)`
   .slick-slide img {
     transition: all 0.4s ease-out;
+    max-height: 19vw!important;
+    @media all and (max-width: 768px) {
+      max-height: 50vh!important;
+    }
+  }
+  
+  .slick-slide {
+    max-height: 19vw!important;
+    @media all and (max-width: 768px) {
+      max-height: 50vh!important;
+    }
   }
   
   .slick-center img {
@@ -20,15 +31,17 @@ export const Slider = styled(Slick)`
   }
   
   .slick-dots {
-    bottom: -80px;
-    margin-bottom: -40px;
+    position: relative;
+    margin-top: 50px;
   }
+
   
   .slick-dots li {
     width: auto;
     margin-top: 20px;
     >img {
       filter: grayscale(100%);
+      max-height: 66px;
     }
   }
   .slick-dots li.slick-active {
@@ -54,6 +67,7 @@ export const Title = styled.h1`
 `;
 
 export const ArrowButton = styled.div`
+  top: 10vw;
   width: 50px;
   height: 50px;
   margin: 0 50px;
@@ -61,6 +75,7 @@ export const ArrowButton = styled.div`
   background-color: rgba(140, 33, 18, 0.8)!important;
   @media all and (max-width: 768px) {
     margin: 0 75px;
+    top: 25vh;
   }
 `;
 

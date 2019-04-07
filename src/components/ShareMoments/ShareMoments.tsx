@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { isMobile } from 'react-device-detect';
 
-import cuarto from '../../images/cuarto.jpg';
-import patio from '../../images/patio.jpg';
-import sala from '../../images/sala.jpg';
+import moment1 from '../../images/moments-1.jpg';
+import moment2 from '../../images/moments-2.jpg';
+import moment3 from '../../images/moments-3.jpg';
 
 import { FlexContainer, Image, PolaroidContainer, Text, TextContainer, Title } from './ShareMoments.styled';
 import { IPolaroidProps } from './ShareMoments.types';
@@ -27,9 +27,9 @@ const ShareMoments: React.FC = (): JSX.Element => {
         }
       </TextContainer>
       <PolaroidContainer>
-        <PolaroidPic tilt={5} imageSrc={cuarto} />
-        <PolaroidPic tilt={-20} imageSrc={patio} />
-        <PolaroidPic tilt={15} imageSrc={sala} />
+        <PolaroidPic tilt={5} imageSrc={moment1} />
+        <PolaroidPic tilt={-20} imageSrc={moment2} />
+        <PolaroidPic tilt={15} imageSrc={moment3} />
       </PolaroidContainer>
     </FlexContainer>
   )
