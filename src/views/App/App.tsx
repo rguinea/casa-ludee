@@ -7,6 +7,7 @@ import Cuadrant from '../../components/Cuandrant'
 import Header from '../../components/Header'
 import Information from '../../components/Information'
 import Photos from '../../components/Photos'
+import Reviews from '../../components/Reviews'
 import SanMiguelArea from '../../components/SanMiguelArea'
 import ShareMoments from '../../components/ShareMoments'
 import Stats from '../../components/Stats'
@@ -46,6 +47,7 @@ class App extends React.Component {
         </Cuadrant>
         <SanMiguelArea id="location" />
         <Airbnb id="airbnb" />
+        <Reviews id="evals" />
       </AppContainer>
     );
   }

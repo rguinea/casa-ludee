@@ -33,7 +33,7 @@ export const Text = styled.p`
   }
 `;
 
-export const Title = styled.p`
+export const Title = styled.h1`
 	font-family: Ailerons;
 	font-size: 48px;
 	text-align: right;

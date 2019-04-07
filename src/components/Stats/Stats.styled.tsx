@@ -46,29 +46,3 @@ export const Divider = styled.span`
     display: none;
   }
 `;
-
-export const BlueText = styled.p`
-	font-family: Oswald;
-	font-size: 40px;
-  margin-top: -50px;
-	text-align: center;
-	color: #11159a;
-  text-transform: uppercase;
-  /* mobile phone */
-  @media all and (max-width: 768px) {
-    font-size: 30px;
-    margin-top: -34px;
-  }
-`;
-
-export const CursiveText = styled.p`
-  margin: 0;
-	font-family: Allura;
-	font-size: 94.3px;
-	text-align: center;
-	color: #e0dfdf;
-  /* mobile phone */
-  @media all and (max-width: 768px) {
-    font-size: 50px;
-  }
-`;

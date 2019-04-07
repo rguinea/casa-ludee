@@ -38,7 +38,7 @@ export const Slider = styled(Slick)`
   }
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h1`
 	font-family: Gotham;
 	font-weight: bold;
 	letter-spacing: 19.7px;
