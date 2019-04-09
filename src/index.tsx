@@ -5,7 +5,7 @@ import './global-styles.css';
 import registerServiceWorker from './registerServiceWorker';
 import App from './views/App/App';
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <App />,
   document.getElementById('root') as HTMLElement
 );
