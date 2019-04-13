@@ -34,7 +34,7 @@ const Amenities: React.FC<IPropTypes> = (props): JSX.Element => {
       <ImageWithText imageSrc={coche} text='Estacionamiento para dos autos' />
     </FlexContainer>
     <MoreInfo>
-      - LA CASA INCLUYE UNA AMA DE LLAVES DURANTE TODA TU ESTADÍA PARA
+      - LA CASA INCLUYE UN AMA DE LLAVES DURANTE TODA TU ESTADÍA PARA
       HACER MUCHO MÁS CONFORTABLE TUS DÍAS EN LA CASA -
     </MoreInfo>
   </>
