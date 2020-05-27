@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Casa Ludee
 This is a personal website to promote my House Rental in San Miguel de Allende.
 
-You can find it deployed in www.casaludee.com (soon)
+You can find it deployed in https://www.casaludee.com
 
 # Instalation
 
